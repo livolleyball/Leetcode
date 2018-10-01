@@ -1,3 +1,5 @@
+package leetcode1_100;
+
 import java.util.HashMap;
 
 public class TwoSum {
@@ -20,7 +22,7 @@ public class TwoSum {
         int[] res=new int[]{-1,-1};
         HashMap<Integer,Integer> map =new HashMap<Integer, Integer>();
         for (int i=0;i<nums.length;i++){
-            System.out.println(map);
+            //System.out.println(map);
             if (map.containsKey(target-nums[i])){
                 res[0]=map.get(target-nums[i]);
                 res[1]=i;
