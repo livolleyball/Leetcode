@@ -1,8 +1,11 @@
 import leetcode1_100.PalindromeSubstrings;
 import leetcode1_100.TwoSum;
+import leetcode1_100.PalindromeNumber;
 import org.junit.Test;
 import static  org.junit.Assert.*;
 import tools.TimeTrans;
+
+
 // 静态引用
 
 /*
@@ -46,6 +49,15 @@ public class test {
         String s1 = tt.timeTrans(date);
         System.out.println(s1);
         assertEquals("2018-12-27 16:51:55",s1);
+    }
+
+    @Test
+    public void method7() {
+
+        PalindromeNumber psn = new PalindromeNumber();
+        boolean a=psn.isPalindrome(123);
+        assertEquals(false,a);
+
     }
 }
 
